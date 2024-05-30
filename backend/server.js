@@ -1,8 +1,9 @@
 // server.js
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const port = 3000;
+const express = require("express")
+const mongoose = require("mongoose")
+const cors = require("cors")
+const EmployeeModel = require("./model/Employee")
+
 
 mongoose.connect("mongodb://127.0.0.1:27017/employee");
 
